@@ -13,7 +13,7 @@ orders:
     appName: orders
     role: api
     containerName: orders-container
-    imageRepository: lukondefmwila/ecommerce-orders
+    imageRepository: franchialan/ecommerce-orders
     imageTag: sha256:1a12abff6f5dbb10742ccdaaf2c16b4f101df99440cd3bdda2106226fc6201f9
     port: 3003
   # Horizontal Pod Autoscaler

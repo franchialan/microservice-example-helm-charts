@@ -35,7 +35,7 @@ orders:
     targetPort: 3003
   # Canary Service object (for Argo Rollouts)
   canaryService:
-    enabled: false
+    enabled: true
   # Namespace object
   namespace:
     enabled: false

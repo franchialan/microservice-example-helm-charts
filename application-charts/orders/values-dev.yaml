@@ -2,7 +2,7 @@ global:
   chartName: orders
 orders:
   # Deployment object
-  deployment:
+  newDeployment:
     enabled: true
     name: orders
     namespace: ecommerce

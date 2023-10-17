@@ -37,11 +37,11 @@ orders:
   canaryService:
     enabled: false
   # Namespace object
-  namespace: ecommerce
+  namespace:
     enabled: false
   # Ingress 
   ingress:
     enabled: false
   # Canary Rollout # Canary Service object (for Argo Rollouts)
   canaryRollout:
-    enabled: false
+    enabled: true

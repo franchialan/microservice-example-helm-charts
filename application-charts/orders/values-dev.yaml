@@ -5,7 +5,7 @@ orders:
   # deployment:
   #   enabled: false
   # Updated (New) Deployment resource
-  newDeployment:
+  Deployment:
     enabled: true
     name: orders
     namespace: ecommerce

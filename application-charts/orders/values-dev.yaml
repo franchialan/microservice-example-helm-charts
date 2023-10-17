@@ -2,8 +2,8 @@ global:
   chartName: orders
 orders:
   # Deployment object
-  # deployment:
-  #   enabled: false
+  newDeployment:
+    enabled: false
   # Updated (New) Deployment resource
   deployment:
     enabled: true

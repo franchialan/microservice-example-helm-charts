@@ -3,9 +3,6 @@ global:
 orders:
   # Deployment object
   deployment:
-    enabled: false
-  # Updated (New) Deployment resource
-  newDeployment:
     enabled: true
     name: orders
     namespace: ecommerce
@@ -16,14 +13,6 @@ orders:
     imageRepository: franchialan/ecommerce-orders
     imageTag: sha256:2f583bcbe27c7fd172d102ecd989e6e4c6286be6819fdad4bc89e779de3acaa8
     port: 3003
-  # Horizontal Pod Autoscaler
-  hpa:
-    enabled: false
-  # Service Account object
-  serviceAccount:
-    enabled: true
-    name: orders-service-account
-    namespace: ecommerce
   # Stable Service object
   service:
     enabled: true
@@ -33,15 +22,29 @@ orders:
     type: ClusterIP
     servicePort: 3003
     targetPort: 3003
-  # Canary Service object (for Argo Rollouts)
+  # Canary Service object
   canaryService:
     enabled: false
+  # Service Account object
+  serviceAccount:
+    enabled: true
+    name: orders-service-account
+    namespace: ecommerce
   # Namespace object
   namespace:
     enabled: false
   # Ingress 
   ingress:
+    enabled: true
+    name: orders
+    namespace: ecommerce
+    host: lukemwila.com
+    path: "/"
+    serviceName: orders-service
+    servicePort: 3003
+  # Horizontal Pod Autoscaler
+  hpa:
     enabled: false
-  # Canary Rollout # Canary Service object (for Argo Rollouts)
+  # Canary Rollout
   canaryRollout:
     enabled: false

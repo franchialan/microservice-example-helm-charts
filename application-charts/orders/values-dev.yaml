@@ -3,10 +3,10 @@ global:
 orders:
   # Deployment object
   deployment:
-    enabled: false
+    enabled: true
   # Updated (New) Deployment resource
   newDeployment:
-    enabled: true
+    enabled: false
     name: orders
     namespace: ecommerce
     replicas: 3

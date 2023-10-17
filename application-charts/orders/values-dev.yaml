@@ -3,9 +3,7 @@ global:
 orders:
   # Deployment object
   newDeployment:
-    enabled: true
-    name: orders
-    namespace: ecommerce
+    enabled: false
   # Updated (New) Deployment resource
   deployment:
     enabled: true

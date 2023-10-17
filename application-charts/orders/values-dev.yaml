@@ -14,7 +14,7 @@ orders:
     role: api
     containerName: orders-container
     imageRepository: franchialan/ecommerce-orders
-    imageTag: sha256:99dd8c51e1eeae9fb000362d11402a5f71af2ab9e8eb0ca47e74106b503c104d
+    imageTag: sha256:49297608786e79dfbdd6e14b9b9902e651264cf3b0ad2b686974a03159823e5f
     port: 3003
   # Horizontal Pod Autoscaler
   hpa:

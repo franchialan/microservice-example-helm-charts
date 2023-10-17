@@ -11,7 +11,7 @@ orders:
     role: api
     containerName: orders-container
     imageRepository: franchialan/ecommerce-orders
-    imageTag: sha256:370967d708108815c34d3a54a714180d6caaabed2c7cbaa69b6695746aa2c43f
+    imageTag: sha256:9075bce1dc2ba2e5d8a98c96198647de6a975e394505c68c8ce5bf1ea873ba99
     port: 3003
   # Stable Service object
   service:

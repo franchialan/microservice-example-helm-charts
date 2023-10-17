@@ -37,7 +37,7 @@ orders:
   canaryService:
     enabled: false
   # Namespace object
-  namespace:
+  namespace: ecommerce
     enabled: false
   # Ingress 
   ingress:

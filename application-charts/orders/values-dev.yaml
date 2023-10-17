@@ -38,7 +38,7 @@ orders:
     enabled: true
     name: orders
     namespace: ecommerce
-    host: lukemwila.com
+    host: nip.io
     path: "/"
     serviceName: orders-service
     servicePort: 3003

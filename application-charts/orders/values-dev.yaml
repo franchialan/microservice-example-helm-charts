@@ -3,7 +3,7 @@ global:
 orders:
   # Deployment object
   newDeployment:
-    enabled: false
+    enabled: true
   # Updated (New) Deployment resource
   deployment:
     enabled: true
